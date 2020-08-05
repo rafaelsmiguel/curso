@@ -8,13 +8,32 @@
 
 import UIKit
 
-class CalculadoraVC: UIViewController {
+class CalculadoraVC: BaseViewController {
 
+    @IBOutlet weak var resultadoLabel: UILabel!
+    @IBOutlet weak var calcView: CalculadoraView!
+    @IBOutlet weak var viewPrincipal: UIView!
+    @IBOutlet weak var calcButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+//        self.calcView.setupView()
+//        self.setupView()
     }
 
+    @IBAction func clicouCalcularButton(_ sender: UIButton) {
+    
+        self.resultadoLabel.text = self.calcView.calcularIMC()
+    
+    }
+    
+    override func setupView() {
+        self.calcView.setupView(color: .yellow)
+        self.view.backgroundColor = .green
+        self.viewPrincipal.backgroundColor = .green
+        self.calcButton.backgroundColor = .green
+        self.calcButton.setTitleColor(.white, for: .normal)
 
+    }
 }
-

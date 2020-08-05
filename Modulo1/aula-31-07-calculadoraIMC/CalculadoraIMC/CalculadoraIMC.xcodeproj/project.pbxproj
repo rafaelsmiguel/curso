@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B8E97A24D8DA4200E4133F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B8E97924D8DA4200E4133F /* BaseViewController.swift */; };
 		01F639E424D4EC6200EDC1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F639E324D4EC6200EDC1A4 /* AppDelegate.swift */; };
 		01F639E624D4EC6200EDC1A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F639E524D4EC6200EDC1A4 /* SceneDelegate.swift */; };
 		01F639E824D4EC6200EDC1A4 /* CalculadoraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F639E724D4EC6200EDC1A4 /* CalculadoraVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B8E97924D8DA4200E4133F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		01F639E024D4EC6200EDC1A4 /* CalculadoraIMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculadoraIMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F639E324D4EC6200EDC1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F639E524D4EC6200EDC1A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				01F639EC24D4EC6400EDC1A4 /* Assets.xcassets */,
 				01F639EE24D4EC6400EDC1A4 /* LaunchScreen.storyboard */,
 				01F639F124D4EC6400EDC1A4 /* Info.plist */,
+				01B8E97924D8DA4200E4133F /* BaseViewController.swift */,
 			);
 			path = CalculadoraIMC;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B8E97A24D8DA4200E4133F /* BaseViewController.swift in Sources */,
 				01F639E824D4EC6200EDC1A4 /* CalculadoraVC.swift in Sources */,
 				01F639E424D4EC6200EDC1A4 /* AppDelegate.swift in Sources */,
 				01F639F924D4F00500EDC1A4 /* CalculadoraView.swift in Sources */,
