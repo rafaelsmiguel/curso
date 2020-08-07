@@ -9,7 +9,11 @@
 import UIKit
 
 class CalculadoraVC: BaseViewController {
+   
 
+    //protocolo -> 
+    
+    
     @IBOutlet weak var resultadoLabel: UILabel!
     @IBOutlet weak var calcView: CalculadoraView!
     @IBOutlet weak var viewPrincipal: UIView!
@@ -17,23 +21,40 @@ class CalculadoraVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
 //        self.calcView.setupView()
 //        self.setupView()
     }
 
     @IBAction func clicouCalcularButton(_ sender: UIButton) {
     
-        self.resultadoLabel.text = self.calcView.calcularIMC()
+        
+        self.calcView.calcularIMC()
+//        self.resultadoLabel.text = self.calcView.calcularIMC()
     
     }
     
     override func setupView() {
         self.calcView.setupView(color: .yellow)
+        self.calcView.delegate = self
         self.view.backgroundColor = .green
         self.viewPrincipal.backgroundColor = .green
         self.calcButton.backgroundColor = .green
-        self.calcButton.setTitleColor(.white, for: .normal)
+        self.calcButton.setTitleColor(.black, for: .normal)
 
     }
+    
+   
 }
+
+extension CalculadoraVC: CalculadoraViewProtocol {
+    func failureCalcIMC(value: String) {
+        self.resultadoLabel.text = value
+    }
+    
+    func successCalcIMC(value: String) {
+        self.resultadoLabel.text = value
+    }
+}
+

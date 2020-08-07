@@ -11,6 +11,7 @@ import UIKit
 class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
     }
     
     func setupView() {
