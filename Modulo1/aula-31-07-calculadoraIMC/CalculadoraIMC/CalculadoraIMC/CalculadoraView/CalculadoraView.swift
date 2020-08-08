@@ -27,6 +27,17 @@ class CalculadoraView: UIView {
         self.alturaTextField.placeholder = "Altura"
         self.pesoTextField.placeholder = "Peso"
         self.backgroundColor = color
+        alturaTextField.delegate = self
+        pesoTextField.delegate = self
+        
+        //coloca o foco no textfield
+        self.alturaTextField.becomeFirstResponder()
+        
+        //tira o foco do textfield
+//        self.alturaTextField.resignFirstResponder()
+        
+        pesoTextField.tag = 1
+        alturaTextField.tag = 2
     }
     
     func calcularIMC() {
@@ -58,4 +69,40 @@ class CalculadoraView: UIView {
             self.delegate?.successCalcIMC(value: result)
         }
     }
+}
+
+extension CalculadoraView: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+//        if textField == self.pesoTextField {
+//            self.pesoTextField.backgroundColor = .red
+//        } else {
+//            self.alturaTextField.backgroundColor = .red
+//        }
+        
+        textField.backgroundColor = .red
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.backgroundColor = .white
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        textField.backgroundColor = .blue
+    }
+     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //textField.resignFirstResponder()
+        
+        if textField == self.alturaTextField {
+            self.pesoTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+            self.calcularIMC()
+        }
+        
+        textField.backgroundColor = .blue
+        return true
+    }
+    
 }
