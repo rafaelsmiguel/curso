@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTm-CZ-fbX" userLabel="viewPrincipal">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJJ-qk-3LD" customClass="LoginView" customModule="Desafio_Login" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="25" width="364" height="138"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-ND-mAS">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="138"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAc-LP-kiu" userLabel="txtEmail">
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJQ-Xs-jXT" userLabel="txtPassword">
+                                                        <rect key="frame" x="0.0" y="54" width="364" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2AD-9C-0hp">
+                                                        <rect key="frame" x="0.0" y="108" width="364" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-xP-Ui9" userLabel="btnAdd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="30"/>
+                                                                <color key="backgroundColor" red="0.37647058820000001" green="0.3921568627" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Cadastrar"/>
+                                                                <connections>
+                                                                    <action selector="didTappedAdd:" destination="qJJ-qk-3LD" eventType="touchUpInside" id="ukm-G4-zch"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-NZ-bzr" userLabel="btnLogin">
+                                                                <rect key="frame" x="192" y="0.0" width="172" height="30"/>
+                                                                <color key="backgroundColor" red="0.37647058820000001" green="0.3921568627" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Login"/>
+                                                                <connections>
+                                                                    <action selector="didTappedLogin:" destination="qJJ-qk-3LD" eventType="touchUpInside" id="lOk-2D-sNc"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hAu-ND-mAS" firstAttribute="top" secondItem="qJJ-qk-3LD" secondAttribute="top" id="GsV-fs-EJH"/>
+                                            <constraint firstItem="hAu-ND-mAS" firstAttribute="leading" secondItem="qJJ-qk-3LD" secondAttribute="leading" id="XcA-wb-EO8"/>
+                                            <constraint firstAttribute="trailing" secondItem="hAu-ND-mAS" secondAttribute="trailing" id="axn-ZM-MJb"/>
+                                            <constraint firstAttribute="bottom" secondItem="hAu-ND-mAS" secondAttribute="bottom" id="bcP-wm-DqL"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="btnAdd" destination="QeH-xP-Ui9" id="1wx-aN-BGS"/>
+                                            <outlet property="btnLogin" destination="bL1-NZ-bzr" id="gvB-p0-3ay"/>
+                                            <outlet property="txtEmail" destination="JAc-LP-kiu" id="IFs-tL-RwF"/>
+                                            <outlet property="txtPassword" destination="XJQ-Xs-jXT" id="eUH-Nv-HZQ"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="qJJ-qk-3LD" firstAttribute="leading" secondItem="sTm-CZ-fbX" secondAttribute="leading" constant="25" id="NPL-CT-Rvh"/>
+                                    <constraint firstAttribute="trailing" secondItem="qJJ-qk-3LD" secondAttribute="trailing" constant="25" id="ghq-E6-2X5"/>
+                                    <constraint firstItem="qJJ-qk-3LD" firstAttribute="top" secondItem="sTm-CZ-fbX" secondAttribute="top" constant="25" id="mjF-Df-u9C"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sTm-CZ-fbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rol-yN-02i"/>
+                            <constraint firstItem="sTm-CZ-fbX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bxt-zW-6eA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTm-CZ-fbX" secondAttribute="bottom" id="sgg-OO-P08"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTm-CZ-fbX" secondAttribute="trailing" id="ykK-Li-MqQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="qJJ-qk-3LD" id="l07-Wo-iAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
