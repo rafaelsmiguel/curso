@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sorteio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-ds-Ibk" userLabel="nameTextField">
+                                <rect key="frame" x="20" y="77" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlt-mo-x43" userLabel="btnSort">
+                                <rect key="frame" x="20" y="136" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sortear"/>
+                                <connections>
+                                    <action selector="tappedSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDi-OB-FPz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXq-Db-lKd" userLabel="lblGrupo">
+                                <rect key="frame" x="20" y="191" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JbW-S0-cp3">
+                                <rect key="frame" x="20" y="236.5" width="374" height="122.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yQ-IA-NOm" userLabel="lblNome1G1">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzP-KN-9cb" userLabel="lblNome2G1">
+                                        <rect key="frame" x="0.0" y="25.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-Ac-qV5" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="51" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R89-BX-xqA" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="76.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-O1-H3N" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="102" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfl-d2-xiX" userLabel="lblGrupo">
+                                <rect key="frame" x="20" y="374" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v3z-Cq-3G1">
+                                <rect key="frame" x="20" y="419.5" width="374" height="122.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT4-Ep-6Dx" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Un4-WA-ogT" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="25.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBV-mA-jBP" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="51" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-Vv-75s" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="76.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-IM-wli" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="102" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YiV-5u-Rpm">
+                                <rect key="frame" x="20" y="602.5" width="374" height="97"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Th-fj0" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kru-Fs-95D" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="25.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-Bo-0hH" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="51" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdO-X1-xyy" userLabel="lblGrupo">
+                                        <rect key="frame" x="0.0" y="76.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Rj-Pfg" userLabel="lblGrupo">
+                                <rect key="frame" x="20" y="557" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aW5-ds-Ibk" secondAttribute="trailing" constant="20" id="43X-8G-bY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ma7-Rj-Pfg" secondAttribute="trailing" constant="20" id="7lr-qK-jN8"/>
+                            <constraint firstItem="wfl-d2-xiX" firstAttribute="top" secondItem="JbW-S0-cp3" secondAttribute="bottom" constant="15" id="IH1-YM-xeD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YiV-5u-Rpm" secondAttribute="trailing" constant="20" id="IKm-lq-Amd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JbW-S0-cp3" secondAttribute="trailing" constant="20" id="MY4-3f-JzJ"/>
+                            <constraint firstItem="rXq-Db-lKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mez-vO-V4x"/>
+                            <constraint firstItem="v3z-Cq-3G1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PMv-HF-eYd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jlt-mo-x43" secondAttribute="trailing" constant="20" id="VRY-Uv-5mY"/>
+                            <constraint firstItem="aW5-ds-Ibk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Vss-eG-zGt"/>
+                            <constraint firstItem="aW5-ds-Ibk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xs6-4A-mBe"/>
+                            <constraint firstItem="jlt-mo-x43" firstAttribute="top" secondItem="aW5-ds-Ibk" secondAttribute="bottom" constant="25" id="cCR-WW-cCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wfl-d2-xiX" secondAttribute="trailing" constant="20" id="cw6-F7-wHI"/>
+                            <constraint firstItem="JbW-S0-cp3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="edl-y6-Ww3"/>
+                            <constraint firstItem="v3z-Cq-3G1" firstAttribute="top" secondItem="wfl-d2-xiX" secondAttribute="bottom" constant="25" id="h8Z-hV-6vN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v3z-Cq-3G1" secondAttribute="trailing" constant="20" id="huO-o3-Prt"/>
+                            <constraint firstItem="Ma7-Rj-Pfg" firstAttribute="top" secondItem="v3z-Cq-3G1" secondAttribute="bottom" constant="15" id="mcE-Rx-tQj"/>
+                            <constraint firstItem="Ma7-Rj-Pfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="myZ-yl-KgS"/>
+                            <constraint firstItem="YiV-5u-Rpm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tKT-6C-qsl"/>
+                            <constraint firstItem="wfl-d2-xiX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u2a-eA-bwu"/>
+                            <constraint firstItem="jlt-mo-x43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uKW-EH-CPP"/>
+                            <constraint firstItem="YiV-5u-Rpm" firstAttribute="top" secondItem="Ma7-Rj-Pfg" secondAttribute="bottom" constant="25" id="vxd-HU-CCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXq-Db-lKd" secondAttribute="trailing" constant="20" id="wh5-JP-pGD"/>
+                            <constraint firstItem="rXq-Db-lKd" firstAttribute="top" secondItem="jlt-mo-x43" secondAttribute="bottom" constant="25" id="xCR-dQ-Hed"/>
+                            <constraint firstItem="JbW-S0-cp3" firstAttribute="top" secondItem="rXq-Db-lKd" secondAttribute="bottom" constant="25" id="zcw-we-aXs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnSort" destination="jlt-mo-x43" id="MZm-0d-ny4"/>
+                        <outlet property="lblNome1G1" destination="7yQ-IA-NOm" id="pUl-ZO-2Iv"/>
+                        <outlet property="lblNome1G2" destination="lT4-Ep-6Dx" id="12h-lf-NGU"/>
+                        <outlet property="lblNome1G3" destination="A3b-Th-fj0" id="sAt-Zv-h1W"/>
+                        <outlet property="lblNome2G1" destination="IzP-KN-9cb" id="GlK-kG-aXM"/>
+                        <outlet property="lblNome2G2" destination="Un4-WA-ogT" id="xOW-dR-ANc"/>
+                        <outlet property="lblNome2G3" destination="kru-Fs-95D" id="Xhk-gY-1qp"/>
+                        <outlet property="lblNome3G1" destination="1ma-Ac-qV5" id="aTN-mY-bXa"/>
+                        <outlet property="lblNome3G2" destination="rBV-mA-jBP" id="uVU-iz-sZp"/>
+                        <outlet property="lblNome3G3" destination="l0z-Bo-0hH" id="zP6-qL-jBX"/>
+                        <outlet property="lblNome4G1" destination="R89-BX-xqA" id="D8p-Oi-agb"/>
+                        <outlet property="lblNome4G2" destination="Bpd-Vv-75s" id="e9D-gQ-z7J"/>
+                        <outlet property="lblNome4G3" destination="wdO-X1-xyy" id="PSt-By-lPl"/>
+                        <outlet property="lblNome5G1" destination="YL8-O1-H3N" id="1l7-r7-fY9"/>
+                        <outlet property="lblNome5G2" destination="LX9-IM-wli" id="Rca-sH-5un"/>
+                        <outlet property="nameTextField" destination="aW5-ds-Ibk" id="OgR-cA-z7t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
