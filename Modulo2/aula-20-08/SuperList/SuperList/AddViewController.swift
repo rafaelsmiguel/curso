@@ -42,7 +42,7 @@ class AddViewController: UIViewController {
             return
         }
             
-        let product = Product(name: name, price: price)
+        let product = Product(name: name, price: price, category: .clean)
         
         self.delegate?.updateList(product: product)
         
