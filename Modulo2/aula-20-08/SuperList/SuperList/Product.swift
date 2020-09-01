@@ -18,11 +18,13 @@ struct Product {
     var name:String?
     var price: String?
     var category: Category
+    var selected: Bool
     
-    init(name: String, price: String, category: Category) {
+    init(name: String, price: String, category: Category, selected: Bool) {
         self.name = name
         self.price = price
         self.category = category
+        self.selected = selected
     }
     
 }

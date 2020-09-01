@@ -19,18 +19,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let product1 = Product(name: "Picanha",price: "39,90",category: .food)
-        let product2 = Product(name: "Filé Mignon",price: "35,90",category: .food)
-        let product3 = Product(name: "Patinho",price: "32,90",category: .food)
-        let product4 = Product(name: "Peixinho",price: "29,90",category: .food)
-        let product5 = Product(name: "Acem",price: "22,90",category: .food)
+        let product1 = Product(name: "Picanha",price: "39,90",category: .food,selected: false)
+        let product2 = Product(name: "Filé Mignon",price: "35,90",category: .food,selected: false)
+        let product3 = Product(name: "Patinho",price: "32,90",category: .food,selected: false)
+        let product4 = Product(name: "Peixinho",price: "29,90",category: .food,selected: false)
+        let product5 = Product(name: "Acem",price: "22,90",category: .food,selected: false)
         
-        let product6 = Product(name: "Bombril",price: "3,99",category: .clean)
-        let product7 = Product(name: "Pinho Sol",price: "10,90",category: .clean)
-        let product8 = Product(name: "Alvejante",price: "9,90",category: .clean)
-        let product9 = Product(name: "Detergente",price: "1,90",category: .clean)
-        let product10 = Product(name: "Sabão em Pó",price: "3,90",category: .clean)
-        let product11 = Product(name: "Contra filé",price: "28,90",category: .food)
+        let product6 = Product(name: "Bombril",price: "3,99",category: .clean,selected: false)
+        let product7 = Product(name: "Pinho Sol",price: "10,90",category: .clean,selected: false)
+        let product8 = Product(name: "Alvejante",price: "9,90",category: .clean,selected: false)
+        let product9 = Product(name: "Detergente",price: "1,90",category: .clean,selected: false)
+        let product10 = Product(name: "Sabão em Pó",price: "3,90",category: .clean,selected: false)
+        let product11 = Product(name: "Contra filé",price: "28,90",category: .food,selected: false)
         
         products.append(product1)
         products.append(product2)
@@ -83,6 +83,8 @@ class ViewController: UIViewController {
 extension ViewController: AddViewContollerProtocol {
     func updateList(product: Product) {
         self.products.append(product)
+        
+        listTableView.reloadData()
     }
     
     
@@ -127,7 +129,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.detailTextLabel?.text = self.products.filter({$0.category == .clean})[indexPath.row].price
         }
         
+       
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell: UITableViewCell? = (tableView.cellForRow(at: indexPath) ?? UITableViewCell()) as UITableViewCell
+        
+        if self.products[indexPath.row].selected {
+            self.products[indexPath.row].selected = false
+            cell?.accessoryType = .none
+        } else {
+            self.products[indexPath.row].selected = true
+            cell?.accessoryType = .checkmark
+        }
     }
     
     

@@ -17,6 +17,11 @@ class AddViewController: UIViewController {
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldPrice: UITextField!
     @IBOutlet weak var btnAdd: UIButton!
+    @IBOutlet weak var segmentedCategoria: UISegmentedControl!
+    
+    private var categorySelected: Category = .food
+    
+    
     weak var delegate: AddViewContollerProtocol?
     
     //var products: [Product] = []
@@ -42,11 +47,13 @@ class AddViewController: UIViewController {
             return
         }
             
-        let product = Product(name: name, price: price, category: .clean)
+        let product = Product(name: name, price: price, category: categorySelected, selected: false)
         
         self.delegate?.updateList(product: product)
         
         clearFields()
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func clearFields() {
@@ -56,6 +63,17 @@ class AddViewController: UIViewController {
         
         self.textFieldName.becomeFirstResponder()
     }
+    
+    @IBAction func tappedCategory(_ sender: UISegmentedControl) {
+        
+            if segmentedCategoria.selectedSegmentIndex == 0 {
+            categorySelected = .food
+        } else {
+            categorySelected = .clean
+        }
+    }
+    
+    
 }
 
 extension AddViewController: UITextFieldDelegate {
