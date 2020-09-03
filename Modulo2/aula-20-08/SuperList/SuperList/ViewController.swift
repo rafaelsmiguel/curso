@@ -145,9 +145,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if self.products[indexPath.row].selected {
             self.products[indexPath.row].selected = false
             cell?.accessoryType = .none
+            print(self.products[indexPath.row].name)
         } else {
             self.products[indexPath.row].selected = true
             cell?.accessoryType = .checkmark
+            print(self.products[indexPath.row].name)
         }
     }
     
