@@ -19,11 +19,19 @@ class CarrosCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setupCell(carro:Carro) {
+    func setupCellCarro(carro:Carro) {
         
         modeloLabel.text = carro.modelo
         anoLabel.text = carro.ano
         carroImageView.image = UIImage(named: carro.imagem ?? "")
+    }
+    
+    func setupCellMoto(moto: Moto) {
+        
+        self.modeloLabel.text = moto.modelo
+        self.anoLabel.text = moto.cilindradas
+        self.carroImageView.image = UIImage(named: moto.image ?? "")
+        
     }
 
 }

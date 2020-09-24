@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myCollectionView: UICollectionView!
     var carros: [Carro] = []
+    var motos: [Moto] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,17 @@ class ViewController: UIViewController {
         carros.append(carro3)
         carros.append(carro4)
         
+        
+        let moto1 = Moto(modelo: "Kawasaki", ano: "2020", image: "brasilia.jpeg", cilindradas: "200")
+        let moto2 = Moto(modelo: "CBR", ano: "2014", image: "fusca.jpg", cilindradas:"200")
+        let moto3 = Moto(modelo: "Scooter", ano: "2016", image: "marea.jpg", cilindradas:"200")
+        let moto4 = Moto(modelo: "Harley Davidson", ano: "2018", image: "passat.jpg", cilindradas:"200")
+        
+        motos.append(moto1)
+        motos.append(moto2)
+        motos.append(moto3)
+        motos.append(moto4)
+        
         self.myCollectionView.register(UINib(nibName: "CarrosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarroCell")
         
         myCollectionView.delegate = self
@@ -35,20 +47,60 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        var reusableview: SectionHeader?
+        
+        if kind == UICollectionView.elementKindSectionHeader {
+            reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? SectionHeader
+
+            if indexPath.section == 0 {
+                reusableview?.backgroundColor = .blue
+                reusableview?.sectionHeaderlabel.text = "Carros"
+
+            }else {
+                reusableview?.backgroundColor = .green
+                reusableview?.sectionHeaderlabel.text = "Motos"
+
+            }
+        
+        }
+
+        return reusableview!
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if carros.count > 0 {
-            return carros.count
+        switch section {
+        case 0:
+            return self.carros.count
+        case 1:
+            return self.motos.count
+        default:break
         }
         
         return 0
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell: CarrosCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarroCell", for: indexPath) as? CarrosCollectionViewCell
-        
-        cell?.setupCell(carro: carros[indexPath.item])
+        let cell: CarrosCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "CarrosCollectionViewCell", for: indexPath) as? CarrosCollectionViewCell
+
+        switch indexPath.section {
+        case 0:
+            cell?.setupCellCarro(carro: self.carros[indexPath.item])
+        case 1:
+            cell?.setupCellMoto(moto: self.motos[indexPath.item])
+        default: break
+        }
+
         
         return cell ?? UICollectionViewCell()
         

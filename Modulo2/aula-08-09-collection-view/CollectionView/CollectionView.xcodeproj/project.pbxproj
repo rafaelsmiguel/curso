@@ -16,6 +16,8 @@
 		01CA86C3250846AE0000AB79 /* CarrosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA86C1250846AE0000AB79 /* CarrosCollectionViewCell.swift */; };
 		01CA86C4250846AE0000AB79 /* CarrosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CA86C2250846AE0000AB79 /* CarrosCollectionViewCell.xib */; };
 		01CA86C625084CEC0000AB79 /* CarroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA86C525084CEC0000AB79 /* CarroModel.swift */; };
+		01EFE374250AEF3E00A030C8 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EFE373250AEF3E00A030C8 /* SectionHeader.swift */; };
+		01EFE376250AF8E700A030C8 /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EFE375250AF8E700A030C8 /* Moto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		01CA86C1250846AE0000AB79 /* CarrosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrosCollectionViewCell.swift; sourceTree = "<group>"; };
 		01CA86C2250846AE0000AB79 /* CarrosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarrosCollectionViewCell.xib; sourceTree = "<group>"; };
 		01CA86C525084CEC0000AB79 /* CarroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroModel.swift; sourceTree = "<group>"; };
+		01EFE373250AEF3E00A030C8 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		01EFE375250AF8E700A030C8 /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				01CA86B825083B950000AB79 /* LaunchScreen.storyboard */,
 				01CA86BB25083B950000AB79 /* Info.plist */,
 				01CA86C525084CEC0000AB79 /* CarroModel.swift */,
+				01EFE373250AEF3E00A030C8 /* SectionHeader.swift */,
+				01EFE375250AF8E700A030C8 /* Moto.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -148,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EFE376250AF8E700A030C8 /* Moto.swift in Sources */,
 				01CA86B225083B930000AB79 /* ViewController.swift in Sources */,
 				01CA86AE25083B930000AB79 /* AppDelegate.swift in Sources */,
+				01EFE374250AEF3E00A030C8 /* SectionHeader.swift in Sources */,
 				01CA86C3250846AE0000AB79 /* CarrosCollectionViewCell.swift in Sources */,
 				01CA86C625084CEC0000AB79 /* CarroModel.swift in Sources */,
 				01CA86B025083B930000AB79 /* SceneDelegate.swift in Sources */,
