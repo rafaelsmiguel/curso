@@ -18,13 +18,24 @@ class ListaCarrosVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        controller.loadCars()
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
 
     @IBAction func tapSortear(_ sender: UIButton) {
         
-        resultadoSorteio.text = self.controller.sorteio()
+//        self.detalheVC.resultado = self.controller.sorteio()
+        
+        //instaciei tela
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detalheViewController = storyBoard.instantiateViewController(withIdentifier: "DetalheVC") as! DetalheVC
+        detalheViewController.detalheController = DetalheController(carro: self.controller.sorteio())
+            
+        self.present(detalheViewController, animated: true, completion: nil)
+        
+        
         
     }
 }

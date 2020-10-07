@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lista CarrosVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListaCarrosVC" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                 <rect key="frame" x="20" y="567" width="374" height="30"/>
                                 <state key="normal" title="Sortear"/>
                                 <connections>
-                                    <action selector="tapSortear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTc-yL-vgc"/>
+                                    <action selector="tapSortear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duE-Ix-Y3t"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKt-kC-dRa">
@@ -78,14 +78,45 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="clicouSortear" destination="Lm4-P4-e9Z" id="ilG-eq-E3J"/>
-                        <outlet property="resultadoSorteio" destination="aKt-kC-dRa" id="JFh-LV-6nC"/>
-                        <outlet property="tableView" destination="P8Y-FT-mvN" id="fE4-Uf-I8d"/>
+                        <outlet property="clicouSortear" destination="Lm4-P4-e9Z" id="Kpw-Fc-eBE"/>
+                        <outlet property="resultadoSorteio" destination="aKt-kC-dRa" id="3BK-MB-DT3"/>
+                        <outlet property="tableView" destination="P8Y-FT-mvN" id="mwm-Dm-VDr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="103.79464285714285"/>
+        </scene>
+        <!--DetalheVC-->
+        <scene sceneID="y2W-FN-LPK">
+            <objects>
+                <viewController storyboardIdentifier="DetalheVC" id="IiV-tl-n30" customClass="DetalheVC" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="66R-m3-hcD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdz-Nn-QUs">
+                                <rect key="frame" x="20" y="144" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uGv-4J-32z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qdz-Nn-QUs" firstAttribute="top" secondItem="uGv-4J-32z" secondAttribute="top" constant="100" id="74R-iT-zY1"/>
+                            <constraint firstItem="qdz-Nn-QUs" firstAttribute="leading" secondItem="uGv-4J-32z" secondAttribute="leading" constant="20" id="e5i-c8-R3d"/>
+                            <constraint firstItem="uGv-4J-32z" firstAttribute="trailing" secondItem="qdz-Nn-QUs" secondAttribute="trailing" constant="20" id="nXS-uC-tzC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultadoSorteio" destination="qdz-Nn-QUs" id="0WV-K0-DYj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxo-IS-eEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="104"/>
         </scene>
     </scenes>
     <resources>

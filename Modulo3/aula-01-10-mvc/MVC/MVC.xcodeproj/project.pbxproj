@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01120049252D298300DE55B5 /* DetalheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01120048252D298300DE55B5 /* DetalheVC.swift */; };
+		0112004E252D2D0800DE55B5 /* DetalheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0112004D252D2D0800DE55B5 /* DetalheController.swift */; };
 		01617993252691C50050C6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617992252691C50050C6A9 /* AppDelegate.swift */; };
 		01617995252691C50050C6A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617994252691C50050C6A9 /* SceneDelegate.swift */; };
 		01617997252691C50050C6A9 /* ListaCarrosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617996252691C50050C6A9 /* ListaCarrosVC.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01120048252D298300DE55B5 /* DetalheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheVC.swift; sourceTree = "<group>"; };
+		0112004D252D2D0800DE55B5 /* DetalheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheController.swift; sourceTree = "<group>"; };
 		0161798F252691C50050C6A9 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01617992252691C50050C6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01617994252691C50050C6A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				01BF24C22526ABF300F962AF /* ListaCarrosController.swift */,
+				0112004D252D2D0800DE55B5 /* DetalheController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				01617996252691C50050C6A9 /* ListaCarrosVC.swift */,
+				01120048252D298300DE55B5 /* DetalheVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 				01617997252691C50050C6A9 /* ListaCarrosVC.swift in Sources */,
 				016179C9252693220050C6A9 /* Carro.swift in Sources */,
 				01BF24C32526ABF300F962AF /* ListaCarrosController.swift in Sources */,
+				0112004E252D2D0800DE55B5 /* DetalheController.swift in Sources */,
 				01617993252691C50050C6A9 /* AppDelegate.swift in Sources */,
+				01120049252D298300DE55B5 /* DetalheVC.swift in Sources */,
 				01617995252691C50050C6A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

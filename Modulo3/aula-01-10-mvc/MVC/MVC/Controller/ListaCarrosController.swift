@@ -9,7 +9,7 @@ import Foundation
 
 class ListaCarrosController {
     
-    var listCar: [Carro] = []
+    private var listCar: [Carro] = []
     
     func loadCars() {
         
@@ -46,11 +46,11 @@ class ListaCarrosController {
         return listCar[indexPath.row].cor ?? ""
     }
     
-    func sorteio() -> String {
+    func sorteio() -> Carro {
        
-        let modelCar = listCar.randomElement()
+        return listCar.randomElement() ?? Carro()
         
-        return "\(modelCar?.modelo ?? "") - \(modelCar?.cor ?? "") - \(modelCar?.ano ?? 0)"
+//        return "\(modelCar?.modelo ?? "") - \(modelCar?.cor ?? "") - \(modelCar?.ano ?? 0)"
     }
     
     
