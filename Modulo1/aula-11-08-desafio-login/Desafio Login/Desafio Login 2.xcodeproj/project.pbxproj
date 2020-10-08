@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D3A0F924E351C1003A6067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3A0F824E351C1003A6067 /* AppDelegate.swift */; };
+		01D3A0FB24E351C1003A6067 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3A0FA24E351C1003A6067 /* SceneDelegate.swift */; };
+		01D3A0FD24E351C1003A6067 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3A0FC24E351C1003A6067 /* LoginViewController.swift */; };
+		01D3A10024E351C1003A6067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D3A0FE24E351C1003A6067 /* Main.storyboard */; };
+		01D3A10224E351C2003A6067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D3A10124E351C2003A6067 /* Assets.xcassets */; };
+		01D3A10524E351C2003A6067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D3A10324E351C2003A6067 /* LaunchScreen.storyboard */; };
+		01D3A10E24E35446003A6067 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3A10D24E35446003A6067 /* LoginView.swift */; };
+		01D3A11024E35513003A6067 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3A10F24E35513003A6067 /* UserModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01D3A0F524E351C1003A6067 /* Desafio Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D3A0F824E351C1003A6067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01D3A0FA24E351C1003A6067 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01D3A0FC24E351C1003A6067 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01D3A0FF24E351C1003A6067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01D3A10124E351C2003A6067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D3A10424E351C2003A6067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01D3A10624E351C2003A6067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D3A10D24E35446003A6067 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		01D3A10F24E35513003A6067 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D3A0F224E351C1003A6067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D3A0EC24E351C1003A6067 = {
+			isa = PBXGroup;
+			children = (
+				01D3A0F724E351C1003A6067 /* Desafio Login */,
+				01D3A0F624E351C1003A6067 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01D3A0F624E351C1003A6067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D3A0F524E351C1003A6067 /* Desafio Login.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D3A0F724E351C1003A6067 /* Desafio Login */ = {
+			isa = PBXGroup;
+			children = (
+				01D3A10C24E35418003A6067 /* LoginView */,
+				01D3A0F824E351C1003A6067 /* AppDelegate.swift */,
+				01D3A0FA24E351C1003A6067 /* SceneDelegate.swift */,
+				01D3A0FC24E351C1003A6067 /* LoginViewController.swift */,
+				01D3A0FE24E351C1003A6067 /* Main.storyboard */,
+				01D3A10124E351C2003A6067 /* Assets.xcassets */,
+				01D3A10324E351C2003A6067 /* LaunchScreen.storyboard */,
+				01D3A10624E351C2003A6067 /* Info.plist */,
+				01D3A10F24E35513003A6067 /* UserModel.swift */,
+			);
+			path = "Desafio Login";
+			sourceTree = "<group>";
+		};
+		01D3A10C24E35418003A6067 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				01D3A10D24E35446003A6067 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D3A0F424E351C1003A6067 /* Desafio Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D3A10924E351C2003A6067 /* Build configuration list for PBXNativeTarget "Desafio Login" */;
+			buildPhases = (
+				01D3A0F124E351C1003A6067 /* Sources */,
+				01D3A0F224E351C1003A6067 /* Frameworks */,
+				01D3A0F324E351C1003A6067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio Login";
+			productName = "Desafio Login";
+			productReference = 01D3A0F524E351C1003A6067 /* Desafio Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D3A0ED24E351C1003A6067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Rafael Miguel";
+				TargetAttributes = {
+					01D3A0F424E351C1003A6067 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 01D3A0F024E351C1003A6067 /* Build configuration list for PBXProject "Desafio Login" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01D3A0EC24E351C1003A6067;
+			productRefGroup = 01D3A0F624E351C1003A6067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D3A0F424E351C1003A6067 /* Desafio Login */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D3A0F324E351C1003A6067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D3A10524E351C2003A6067 /* LaunchScreen.storyboard in Resources */,
+				01D3A10224E351C2003A6067 /* Assets.xcassets in Resources */,
+				01D3A10024E351C1003A6067 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D3A0F124E351C1003A6067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D3A0FD24E351C1003A6067 /* LoginViewController.swift in Sources */,
+				01D3A0F924E351C1003A6067 /* AppDelegate.swift in Sources */,
+				01D3A10E24E35446003A6067 /* LoginView.swift in Sources */,
+				01D3A11024E35513003A6067 /* UserModel.swift in Sources */,
+				01D3A0FB24E351C1003A6067 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01D3A0FE24E351C1003A6067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D3A0FF24E351C1003A6067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01D3A10324E351C2003A6067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01D3A10424E351C2003A6067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01D3A10724E351C2003A6067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01D3A10824E351C2003A6067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01D3A10A24E351C2003A6067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Desafio Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rafael-Miguel.Desafio-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01D3A10B24E351C2003A6067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Desafio Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Rafael-Miguel.Desafio-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D3A0F024E351C1003A6067 /* Build configuration list for PBXProject "Desafio Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D3A10724E351C2003A6067 /* Debug */,
+				01D3A10824E351C2003A6067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D3A10924E351C2003A6067 /* Build configuration list for PBXNativeTarget "Desafio Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D3A10A24E351C2003A6067 /* Debug */,
+				01D3A10B24E351C2003A6067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D3A0ED24E351C1003A6067 /* Project object */;
+}
