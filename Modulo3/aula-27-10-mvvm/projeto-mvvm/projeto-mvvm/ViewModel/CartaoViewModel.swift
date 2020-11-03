@@ -13,7 +13,7 @@ class CartaoViewModel {
     
     private var currentCartao: CartaoElement?
     
-    private var arrayCartoes: [CartaoElement] = []
+    var arrayCartoes: [CartaoElement] = []
     
     func getListCartao(completion: @escaping (Bool) -> Void) {
         

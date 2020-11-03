@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CartaoCollectionViewCell" id="gTV-IL-0wX" customClass="CartaoCollectionViewCell" customModule="projeto_mvvm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlv-nC-8Ed">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3wr-11-bZA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="6Bu-Kl-z7z"/>
+                                    <constraint firstAttribute="width" constant="320" id="pZ7-gc-QnF"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9A-tp-XRW">
+                                <rect key="frame" x="0.0" y="40" width="320" height="2"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="9iJ-sx-ORg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPw-L0-SyE">
+                                <rect key="frame" x="10" y="62" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsL-Ly-qxL">
+                                <rect key="frame" x="10" y="123" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKc-km-Cb8">
+                                <rect key="frame" x="10" y="184" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="aqf-gC-A7w">
+                                <rect key="frame" x="240" y="118.5" width="50" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4BJ-Kf-wzt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sKc-km-Cb8" firstAttribute="leading" secondItem="tlv-nC-8Ed" secondAttribute="leading" constant="10" id="54h-Te-UjE"/>
+                            <constraint firstItem="aqf-gC-A7w" firstAttribute="centerY" secondItem="sKc-km-Cb8" secondAttribute="centerY" id="6iS-u5-0UI"/>
+                            <constraint firstAttribute="trailing" secondItem="aqf-gC-A7w" secondAttribute="trailing" constant="30" id="9RK-ZO-VU7"/>
+                            <constraint firstItem="sKc-km-Cb8" firstAttribute="top" secondItem="RsL-Ly-qxL" secondAttribute="bottom" constant="40" id="APZ-MU-u95"/>
+                            <constraint firstItem="dPw-L0-SyE" firstAttribute="top" secondItem="z9A-tp-XRW" secondAttribute="bottom" constant="20" id="BRU-Vc-Kqp"/>
+                            <constraint firstItem="dPw-L0-SyE" firstAttribute="leading" secondItem="tlv-nC-8Ed" secondAttribute="leading" constant="10" id="Ew6-Ei-imQ"/>
+                            <constraint firstItem="3wr-11-bZA" firstAttribute="top" secondItem="tlv-nC-8Ed" secondAttribute="top" id="F9P-0X-V9j"/>
+                            <constraint firstItem="3wr-11-bZA" firstAttribute="leading" secondItem="tlv-nC-8Ed" secondAttribute="leading" id="KGn-te-YTH"/>
+                            <constraint firstAttribute="trailing" secondItem="z9A-tp-XRW" secondAttribute="trailing" id="MeL-OL-G9Q"/>
+                            <constraint firstItem="RsL-Ly-qxL" firstAttribute="top" secondItem="dPw-L0-SyE" secondAttribute="bottom" constant="40" id="cdN-wo-Gxz"/>
+                            <constraint firstAttribute="trailing" secondItem="3wr-11-bZA" secondAttribute="trailing" id="dbK-Mf-AjU"/>
+                            <constraint firstItem="z9A-tp-XRW" firstAttribute="leading" secondItem="tlv-nC-8Ed" secondAttribute="leading" id="hiV-tt-VhR"/>
+                            <constraint firstAttribute="bottom" secondItem="3wr-11-bZA" secondAttribute="bottom" id="jvk-Yu-mEq"/>
+                            <constraint firstItem="RsL-Ly-qxL" firstAttribute="leading" secondItem="tlv-nC-8Ed" secondAttribute="leading" constant="10" id="qQF-rh-Lib"/>
+                            <constraint firstItem="z9A-tp-XRW" firstAttribute="top" secondItem="tlv-nC-8Ed" secondAttribute="top" constant="40" id="u24-xz-5Ms"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tlv-nC-8Ed" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H17-YW-n6i"/>
+                <constraint firstAttribute="bottom" secondItem="tlv-nC-8Ed" secondAttribute="bottom" id="JUo-e9-gcG"/>
+                <constraint firstAttribute="trailing" secondItem="tlv-nC-8Ed" secondAttribute="trailing" id="XlX-Ai-MRK"/>
+                <constraint firstItem="tlv-nC-8Ed" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jou-X9-R23"/>
+            </constraints>
+            <size key="customSize" width="358" height="185"/>
+            <connections>
+                <outlet property="imgBrand" destination="aqf-gC-A7w" id="dY2-Ku-TLH"/>
+                <outlet property="imgCard" destination="3wr-11-bZA" id="TK8-JC-prk"/>
+                <outlet property="labelDate" destination="sKc-km-Cb8" id="dKE-0M-0Bi"/>
+                <outlet property="labelName" destination="dPw-L0-SyE" id="aSi-7w-7Gt"/>
+                <outlet property="labelNumber" destination="RsL-Ly-qxL" id="dAr-vr-r6x"/>
+            </connections>
+            <point key="canvasLocation" x="326.08695652173918" y="167.07589285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mastercard" width="185" height="152"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -18,6 +18,10 @@
 		0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140291B2548DCE400C05EC7 /* CartaoWorker.swift */; };
 		014029202548E0B300C05EC7 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0140291F2548E0B300C05EC7 /* cartoes.json */; };
 		014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014029232548F20F00C05EC7 /* CartaoViewModel.swift */; };
+		01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */; };
+		01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */; };
+		01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */; };
+		01AA2FBF254B82CE00CB035C /* CartaoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		0140291B2548DCE400C05EC7 /* CartaoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoWorker.swift; sourceTree = "<group>"; };
 		0140291F2548E0B300C05EC7 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cartoes.json; path = ../../../../../../../Desktop/cartoes.json; sourceTree = "<group>"; };
 		014029232548F20F00C05EC7 /* CartaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoViewModel.swift; sourceTree = "<group>"; };
+		01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
+		01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoTableViewCell.xib; sourceTree = "<group>"; };
+		01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,8 @@
 		0140290F2548D8DA00C05EC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01AA2FB6254B825A00CB035C /* TableCell */,
+				01AA2FB5254B823D00CB035C /* CollectionCell */,
 				014028FB2548D87B00C05EC7 /* CartoesVC.swift */,
 			);
 			path = View;
@@ -120,6 +130,24 @@
 				014029232548F20F00C05EC7 /* CartaoViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01AA2FB5254B823D00CB035C /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */,
+				01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		01AA2FB6254B825A00CB035C /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */,
+				01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +210,8 @@
 				014029042548D87C00C05EC7 /* LaunchScreen.storyboard in Resources */,
 				014029202548E0B300C05EC7 /* cartoes.json in Resources */,
 				014029012548D87C00C05EC7 /* Assets.xcassets in Resources */,
+				01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */,
+				01AA2FBF254B82CE00CB035C /* CartaoCollectionViewCell.xib in Resources */,
 				014028FF2548D87B00C05EC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */,
 				0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */,
+				01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */,
 				014028FC2548D87B00C05EC7 /* CartoesVC.swift in Sources */,
 				014028F82548D87B00C05EC7 /* AppDelegate.swift in Sources */,
 				014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */,

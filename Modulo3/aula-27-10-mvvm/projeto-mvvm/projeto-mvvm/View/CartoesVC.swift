@@ -13,13 +13,14 @@ class CartoesVC: UIViewController {
     
     var viewModel: CartaoViewModel = CartaoViewModel()
     
-    var controller: CartaoController?
+//    var controller: CartaoController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.viewModel.getListCartao { (success) in
             if success {
+                self.myTableView.register(CartaoTableViewCell.nib(), forCellReuseIdentifier: CartaoTableViewCell.identifier)
                 self.myTableView.delegate = self
                 self.myTableView.dataSource = self
             }
@@ -42,20 +43,23 @@ extension CartoesVC: UITableViewDelegate, UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.viewModel.numberOfRows
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         self.viewModel.loadCurrentCartao(index: indexPath.row)
         
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = myTableView.dequeueReusableCell(withIdentifier: CartaoTableViewCell.identifier, for: indexPath) as! CartaoTableViewCell
         
-        cell.textLabel?.text = self.viewModel.nome
-        cell.detailTextLabel?.text = self.viewModel.numero
+        cell.setupList(cartoes: viewModel.arrayCartoes)
         
         return cell
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 320.0
+//    }
     
     
     
