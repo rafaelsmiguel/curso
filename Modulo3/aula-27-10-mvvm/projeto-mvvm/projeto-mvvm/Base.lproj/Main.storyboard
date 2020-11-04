@@ -76,15 +76,30 @@
         <!--Extrato-->
         <scene sceneID="vLO-m6-7yG">
             <objects>
-                <viewController id="hQF-me-JN5" sceneMemberID="viewController">
+                <viewController id="hQF-me-JN5" customClass="ExtratoVC" customModule="projeto_mvvm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9h-tb-U5m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-io-Ofq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gff-GA-256"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gff-GA-256" firstAttribute="trailing" secondItem="ff3-io-Ofq" secondAttribute="trailing" id="ONB-Ng-aVa"/>
+                            <constraint firstItem="Gff-GA-256" firstAttribute="bottom" secondItem="ff3-io-Ofq" secondAttribute="bottom" id="bG0-Hj-MKq"/>
+                            <constraint firstItem="ff3-io-Ofq" firstAttribute="top" secondItem="Gff-GA-256" secondAttribute="top" id="fdC-PO-jfU"/>
+                            <constraint firstItem="ff3-io-Ofq" firstAttribute="leading" secondItem="Gff-GA-256" secondAttribute="leading" id="lNq-cf-0XR"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Extrato" image="dollarsign.circle.fill" catalog="system" id="U0m-4z-I3N"/>
                     <navigationItem key="navigationItem" id="nsj-DW-yhZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="ff3-io-Ofq" id="aP3-R4-0Gw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6Q-DD-NWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,6 +111,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yUA-ar-1jz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DfY-M7-FwU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemPinkColor"/>

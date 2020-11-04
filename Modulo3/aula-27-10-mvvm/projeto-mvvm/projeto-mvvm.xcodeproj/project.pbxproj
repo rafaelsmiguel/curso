@@ -18,6 +18,13 @@
 		0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140291B2548DCE400C05EC7 /* CartaoWorker.swift */; };
 		014029202548E0B300C05EC7 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0140291F2548E0B300C05EC7 /* cartoes.json */; };
 		014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014029232548F20F00C05EC7 /* CartaoViewModel.swift */; };
+		014E53082552149100D26CD7 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E53072552149100D26CD7 /* Lancamento.swift */; };
+		014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E530D2552158C00D26CD7 /* ExtratoVC.swift */; };
+		014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E53112552165D00D26CD7 /* LancamentoTableViewCell.swift */; };
+		014E53142552165D00D26CD7 /* LancamentoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014E53122552165D00D26CD7 /* LancamentoTableViewCell.xib */; };
+		014E5317255219C600D26CD7 /* ExtratoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E5316255219C600D26CD7 /* ExtratoViewModel.swift */; };
+		014E531B25521A8B00D26CD7 /* ExtratoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E531A25521A8B00D26CD7 /* ExtratoWorker.swift */; };
+		014E531F25521C3700D26CD7 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 014E531E25521C3700D26CD7 /* despesas.json */; };
 		01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */; };
 		01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */; };
 		01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */; };
@@ -38,6 +45,13 @@
 		0140291B2548DCE400C05EC7 /* CartaoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoWorker.swift; sourceTree = "<group>"; };
 		0140291F2548E0B300C05EC7 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cartoes.json; path = ../../../../../../../Desktop/cartoes.json; sourceTree = "<group>"; };
 		014029232548F20F00C05EC7 /* CartaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoViewModel.swift; sourceTree = "<group>"; };
+		014E53072552149100D26CD7 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
+		014E530D2552158C00D26CD7 /* ExtratoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoVC.swift; sourceTree = "<group>"; };
+		014E53112552165D00D26CD7 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
+		014E53122552165D00D26CD7 /* LancamentoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LancamentoTableViewCell.xib; sourceTree = "<group>"; };
+		014E5316255219C600D26CD7 /* ExtratoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewModel.swift; sourceTree = "<group>"; };
+		014E531A25521A8B00D26CD7 /* ExtratoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoWorker.swift; sourceTree = "<group>"; };
+		014E531E25521C3700D26CD7 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = despesas.json; path = ../../../../../../../Desktop/despesas.json; sourceTree = "<group>"; };
 		01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
 		01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoTableViewCell.xib; sourceTree = "<group>"; };
 		01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -74,14 +88,13 @@
 		014028F62548D87B00C05EC7 /* projeto-mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				014029222548F20000C05EC7 /* ViewModel */,
-				0140290F2548D8DA00C05EC7 /* View */,
+				014E53052552145700D26CD7 /* Extrato */,
+				014E5304255213D500D26CD7 /* CartaoCollection */,
 				0140290E2548D8A000C05EC7 /* Controller */,
-				0140290D2548D89600C05EC7 /* Worker */,
-				0140290C2548D88F00C05EC7 /* Model */,
 				014028F72548D87B00C05EC7 /* AppDelegate.swift */,
 				014028F92548D87B00C05EC7 /* SceneDelegate.swift */,
 				0140291F2548E0B300C05EC7 /* cartoes.json */,
+				014E531E25521C3700D26CD7 /* despesas.json */,
 				014028FD2548D87B00C05EC7 /* Main.storyboard */,
 				014029002548D87C00C05EC7 /* Assets.xcassets */,
 				014029022548D87C00C05EC7 /* LaunchScreen.storyboard */,
@@ -130,6 +143,70 @@
 				014029232548F20F00C05EC7 /* CartaoViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		014E5304255213D500D26CD7 /* CartaoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0140290C2548D88F00C05EC7 /* Model */,
+				0140290F2548D8DA00C05EC7 /* View */,
+				014029222548F20000C05EC7 /* ViewModel */,
+				0140290D2548D89600C05EC7 /* Worker */,
+			);
+			path = CartaoCollection;
+			sourceTree = "<group>";
+		};
+		014E53052552145700D26CD7 /* Extrato */ = {
+			isa = PBXGroup;
+			children = (
+				014E531925521A7B00D26CD7 /* Worker */,
+				014E530C2552155000D26CD7 /* ViewModel */,
+				014E530B2552154300D26CD7 /* View */,
+				014E53062552147D00D26CD7 /* Model */,
+			);
+			path = Extrato;
+			sourceTree = "<group>";
+		};
+		014E53062552147D00D26CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				014E53072552149100D26CD7 /* Lancamento.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		014E530B2552154300D26CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				014E53102552162300D26CD7 /* LancamentoCell */,
+				014E530D2552158C00D26CD7 /* ExtratoVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		014E530C2552155000D26CD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				014E5316255219C600D26CD7 /* ExtratoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		014E53102552162300D26CD7 /* LancamentoCell */ = {
+			isa = PBXGroup;
+			children = (
+				014E53112552165D00D26CD7 /* LancamentoTableViewCell.swift */,
+				014E53122552165D00D26CD7 /* LancamentoTableViewCell.xib */,
+			);
+			path = LancamentoCell;
+			sourceTree = "<group>";
+		};
+		014E531925521A7B00D26CD7 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				014E531A25521A8B00D26CD7 /* ExtratoWorker.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 		01AA2FB5254B823D00CB035C /* CollectionCell */ = {
@@ -211,6 +288,8 @@
 				014029202548E0B300C05EC7 /* cartoes.json in Resources */,
 				014029012548D87C00C05EC7 /* Assets.xcassets in Resources */,
 				01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */,
+				014E53142552165D00D26CD7 /* LancamentoTableViewCell.xib in Resources */,
+				014E531F25521C3700D26CD7 /* despesas.json in Resources */,
 				01AA2FBF254B82CE00CB035C /* CartaoCollectionViewCell.xib in Resources */,
 				014028FF2548D87B00C05EC7 /* Main.storyboard in Resources */,
 			);
@@ -224,8 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */,
+				014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */,
+				014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */,
 				0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */,
 				01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */,
+				014E53082552149100D26CD7 /* Lancamento.swift in Sources */,
+				014E5317255219C600D26CD7 /* ExtratoViewModel.swift in Sources */,
+				014E531B25521A8B00D26CD7 /* ExtratoWorker.swift in Sources */,
 				014028FC2548D87B00C05EC7 /* CartoesVC.swift in Sources */,
 				014028F82548D87B00C05EC7 /* AppDelegate.swift in Sources */,
 				014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */,
