@@ -51,16 +51,31 @@ extension CartoesVC: UITableViewDelegate, UITableViewDataSource {
         self.viewModel.loadCurrentCartao(index: indexPath.row)
         
         let cell = myTableView.dequeueReusableCell(withIdentifier: CartaoTableViewCell.identifier, for: indexPath) as! CartaoTableViewCell
-        
+        cell.delegate = self
         cell.setupList(cartoes: viewModel.arrayCartoes)
         
         return cell
     }
+}
+
+extension CartoesVC: CartaoTableViewCellDelegate {
+    func tappedCreditCard(id: String?) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let faturaViewController = storyboard.instantiateViewController(withIdentifier: "FaturaVC") as! FaturaVC
+        faturaViewController.viewModel = FaturaViewModel(cardId: id, cardListElement: nil, currentInvoice: nil)
+        
+//            detailViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(faturaViewController, animated: true)
+        
+        
+       // self.performSegue(withIdentifier: "FaturaVC", sender: id)
+        
+    }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 320.0
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc: FaturaVC = segue.destination as? FaturaVC
+//        vc.viewModel = FaturaViewModel(cardId: sender as? String, cardListElement: nil, currentInvoice: nil)
 //    }
-    
-    
     
 }

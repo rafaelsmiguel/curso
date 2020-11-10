@@ -29,6 +29,11 @@
 		01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */; };
 		01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */; };
 		01AA2FBF254B82CE00CB035C /* CartaoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */; };
+		01DDE8A22554B8F200F30621 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8A12554B8F200F30621 /* Invoice.swift */; };
+		01DDE8A52554BA6700F30621 /* FaturaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8A42554BA6700F30621 /* FaturaVC.swift */; };
+		01DDE8A82554BAE000F30621 /* FaturaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8A72554BAE000F30621 /* FaturaViewModel.swift */; };
+		01DDE8AB2554BB5000F30621 /* FaturaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8AA2554BB5000F30621 /* FaturaWorker.swift */; };
+		01DDE8B22554C17C00F30621 /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 01DDE8B12554C17C00F30621 /* invoice.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoTableViewCell.xib; sourceTree = "<group>"; };
 		01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoCollectionViewCell.xib; sourceTree = "<group>"; };
+		01DDE8A12554B8F200F30621 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		01DDE8A42554BA6700F30621 /* FaturaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaVC.swift; sourceTree = "<group>"; };
+		01DDE8A72554BAE000F30621 /* FaturaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaViewModel.swift; sourceTree = "<group>"; };
+		01DDE8AA2554BB5000F30621 /* FaturaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaWorker.swift; sourceTree = "<group>"; };
+		01DDE8B12554C17C00F30621 /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../../../../Desktop/invoice.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 		014028F62548D87B00C05EC7 /* projeto-mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				01DDE89C2554B8A000F30621 /* Fatura */,
 				014E53052552145700D26CD7 /* Extrato */,
 				014E5304255213D500D26CD7 /* CartaoCollection */,
 				0140290E2548D8A000C05EC7 /* Controller */,
@@ -95,6 +106,7 @@
 				014028F92548D87B00C05EC7 /* SceneDelegate.swift */,
 				0140291F2548E0B300C05EC7 /* cartoes.json */,
 				014E531E25521C3700D26CD7 /* despesas.json */,
+				01DDE8B12554C17C00F30621 /* invoice.json */,
 				014028FD2548D87B00C05EC7 /* Main.storyboard */,
 				014029002548D87C00C05EC7 /* Assets.xcassets */,
 				014029022548D87C00C05EC7 /* LaunchScreen.storyboard */,
@@ -227,6 +239,49 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
+		01DDE89C2554B8A000F30621 /* Fatura */ = {
+			isa = PBXGroup;
+			children = (
+				01DDE8A02554B8DE00F30621 /* Model */,
+				01DDE89F2554B8D700F30621 /* View */,
+				01DDE89E2554B8D100F30621 /* ViewModel */,
+				01DDE89D2554B8CA00F30621 /* Worker */,
+			);
+			path = Fatura;
+			sourceTree = "<group>";
+		};
+		01DDE89D2554B8CA00F30621 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				01DDE8AA2554BB5000F30621 /* FaturaWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		01DDE89E2554B8D100F30621 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01DDE8A72554BAE000F30621 /* FaturaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01DDE89F2554B8D700F30621 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01DDE8A42554BA6700F30621 /* FaturaVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01DDE8A02554B8DE00F30621 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01DDE8A12554B8F200F30621 /* Invoice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DDE8B22554C17C00F30621 /* invoice.json in Resources */,
 				014029042548D87C00C05EC7 /* LaunchScreen.storyboard in Resources */,
 				014029202548E0B300C05EC7 /* cartoes.json in Resources */,
 				014029012548D87C00C05EC7 /* Assets.xcassets in Resources */,
@@ -302,15 +358,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DDE8A22554B8F200F30621 /* Invoice.swift in Sources */,
 				01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */,
 				014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */,
 				014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */,
+				01DDE8A82554BAE000F30621 /* FaturaViewModel.swift in Sources */,
 				0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */,
+				01DDE8A52554BA6700F30621 /* FaturaVC.swift in Sources */,
 				01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */,
 				014E53082552149100D26CD7 /* Lancamento.swift in Sources */,
 				014E5317255219C600D26CD7 /* ExtratoViewModel.swift in Sources */,
 				014E531B25521A8B00D26CD7 /* ExtratoWorker.swift in Sources */,
 				014028FC2548D87B00C05EC7 /* CartoesVC.swift in Sources */,
+				01DDE8AB2554BB5000F30621 /* FaturaWorker.swift in Sources */,
 				014028F82548D87B00C05EC7 /* AppDelegate.swift in Sources */,
 				014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */,
 				014028FA2548D87B00C05EC7 /* SceneDelegate.swift in Sources */,

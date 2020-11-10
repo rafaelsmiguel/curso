@@ -56,6 +56,49 @@
             </objects>
             <point key="canvasLocation" x="-32" y="125"/>
         </scene>
+        <!--FaturaVC-->
+        <scene sceneID="f16-OY-p0S">
+            <objects>
+                <viewController storyboardIdentifier="FaturaVC" id="yn9-G5-GpT" customClass="FaturaVC" customModule="projeto_mvvm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ksB-xe-tIf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xwF-uH-OQe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ztv-H8-Ia2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xwF-uH-OQe" firstAttribute="leading" secondItem="Ztv-H8-Ia2" secondAttribute="leading" id="CQ4-fp-x96"/>
+                            <constraint firstItem="Ztv-H8-Ia2" firstAttribute="bottom" secondItem="xwF-uH-OQe" secondAttribute="bottom" id="MRh-XN-NNg"/>
+                            <constraint firstItem="Ztv-H8-Ia2" firstAttribute="trailing" secondItem="xwF-uH-OQe" secondAttribute="trailing" id="NHV-Ox-PZA"/>
+                            <constraint firstItem="xwF-uH-OQe" firstAttribute="top" secondItem="Ztv-H8-Ia2" secondAttribute="top" id="NRW-bb-bx6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tfZ-6L-txA">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="GL2-HY-snh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lx2-dw-EgI">
+                                <rect key="frame" x="20" y="11" width="13" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="tappedBackButton:" destination="yn9-G5-GpT" eventType="touchUpInside" id="guX-l4-tlc"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="xwF-uH-OQe" id="8FZ-3H-tIV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJ8-sd-VDN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="457"/>
+        </scene>
         <!--Extrato-->
         <scene sceneID="Yix-Mj-HxP">
             <objects>
@@ -128,6 +171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

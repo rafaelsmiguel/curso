@@ -63,4 +63,15 @@ class LancamentoTableViewCell: UITableViewCell {
             
         }
     }
+    
+    func setup(value: FaturaViewModel?) {
+        
+        if let _vm = value {
+            
+            self.labelDescription.text = _vm.nome
+            self.setupValor(tipo: _vm.tipo, valor: _vm.valor)
+            self.setupColorItens(tipo: _vm.tipo)
+            
+        }
+    }
 }

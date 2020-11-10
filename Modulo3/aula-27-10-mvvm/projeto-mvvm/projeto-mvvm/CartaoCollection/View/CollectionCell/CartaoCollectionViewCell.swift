@@ -15,6 +15,8 @@ class CartaoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var imgBrand: UIImageView!
     
+    var id: String?
+    
     static let identifier = "CartaoCollectionViewCell"
     
     static func nib() -> UINib {
@@ -28,6 +30,7 @@ class CartaoCollectionViewCell: UICollectionViewCell {
     
     public func setupCell(cartao:CartaoElement) {
         
+        self.id = cartao.id
         self.labelName.text  = cartao.nome
         self.labelNumber.text = cartao.numero
         self.labelDate.text = cartao.data
@@ -45,7 +48,5 @@ class CartaoCollectionViewCell: UICollectionViewCell {
             self.imgCard.image = UIImage(named: "fundo-master.jpg")
             self.imgBrand.image = UIImage(named: "mastercard.png")
         }
-        
     }
-    
 }

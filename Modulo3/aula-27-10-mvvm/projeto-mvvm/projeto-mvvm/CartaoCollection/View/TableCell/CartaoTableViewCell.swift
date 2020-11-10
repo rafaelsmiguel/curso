@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CartaoTableViewCellDelegate: class {
+    func tappedCreditCard(id: String?)
+}
+
 class CartaoTableViewCell: UITableViewCell {
 
     static let identifier = "CartaoTableViewCell"
@@ -14,6 +18,8 @@ class CartaoTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: "CartaoTableViewCell", bundle: nil)
     }
+    
+    
     
     func setupList(cartoes: [CartaoElement]) {
         self.cartoes = cartoes
@@ -23,6 +29,8 @@ class CartaoTableViewCell: UITableViewCell {
     @IBOutlet var collectionView: UICollectionView!
     
     var cartoes = [CartaoElement]()
+    
+    weak var delegate:CartaoTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,6 +60,11 @@ extension CartaoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
         cell.setupCell(cartao: cartoes[indexPath.row])
         
         return cell
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.tappedCreditCard(id: self.cartoes[indexPath.item].id)
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -60,3 +73,4 @@ extension CartaoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     
     
 }
+
