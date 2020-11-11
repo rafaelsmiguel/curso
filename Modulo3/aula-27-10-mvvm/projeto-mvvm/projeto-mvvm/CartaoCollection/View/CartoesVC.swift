@@ -60,17 +60,16 @@ extension CartoesVC: UITableViewDelegate, UITableViewDataSource {
 
 extension CartoesVC: CartaoTableViewCellDelegate {
     func tappedCreditCard(id: String?) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let faturaViewController = storyboard.instantiateViewController(withIdentifier: "FaturaVC") as! FaturaVC
-        faturaViewController.viewModel = FaturaViewModel(cardId: id, cardListElement: nil, currentInvoice: nil)
-        
-//            detailViewController.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(faturaViewController, animated: true)
-        
-        
-       // self.performSegue(withIdentifier: "FaturaVC", sender: id)
-        
+        if id != "" {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let faturaViewController = storyboard.instantiateViewController(withIdentifier: "FaturaVC") as! FaturaVC
+            faturaViewController.viewModel = FaturaViewModel(cardId: id, cardListElement: nil, currentInvoice: nil)
+            
+            self.navigationController?.pushViewController(faturaViewController, animated: true)
+        }
+        // self.performSegue(withIdentifier: "FaturaVC", sender: id)
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -78,4 +77,11 @@ extension CartoesVC: CartaoTableViewCellDelegate {
 //        vc.viewModel = FaturaViewModel(cardId: sender as? String, cardListElement: nil, currentInvoice: nil)
 //    }
     
+    func tappedAddButton() {
+        print("Chegou na VIEWCONTROLLER")
+    }
+    
+    
 }
+
+

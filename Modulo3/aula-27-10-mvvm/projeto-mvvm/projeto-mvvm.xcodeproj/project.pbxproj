@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010873D7255B49930089B7B0 /* AddCartaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010873D5255B49930089B7B0 /* AddCartaoCollectionViewCell.swift */; };
+		010873D8255B49930089B7B0 /* AddCartaoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010873D6255B49930089B7B0 /* AddCartaoCollectionViewCell.xib */; };
 		014028F82548D87B00C05EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014028F72548D87B00C05EC7 /* AppDelegate.swift */; };
 		014028FA2548D87B00C05EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014028F92548D87B00C05EC7 /* SceneDelegate.swift */; };
 		014028FC2548D87B00C05EC7 /* CartoesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014028FB2548D87B00C05EC7 /* CartoesVC.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010873D5255B49930089B7B0 /* AddCartaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		010873D6255B49930089B7B0 /* AddCartaoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCartaoCollectionViewCell.xib; sourceTree = "<group>"; };
 		014028F42548D87B00C05EC7 /* projeto-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "projeto-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		014028F72548D87B00C05EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		014028F92548D87B00C05EC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			children = (
 				01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */,
 				01AA2FBD254B82CE00CB035C /* CartaoCollectionViewCell.xib */,
+				010873D5255B49930089B7B0 /* AddCartaoCollectionViewCell.swift */,
+				010873D6255B49930089B7B0 /* AddCartaoCollectionViewCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010873D8255B49930089B7B0 /* AddCartaoCollectionViewCell.xib in Resources */,
 				01DDE8B22554C17C00F30621 /* invoice.json in Resources */,
 				014029042548D87C00C05EC7 /* LaunchScreen.storyboard in Resources */,
 				014029202548E0B300C05EC7 /* cartoes.json in Resources */,
@@ -360,6 +367,7 @@
 			files = (
 				01DDE8A22554B8F200F30621 /* Invoice.swift in Sources */,
 				01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */,
+				010873D7255B49930089B7B0 /* AddCartaoCollectionViewCell.swift in Sources */,
 				014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */,
 				014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */,
 				01DDE8A82554BAE000F30621 /* FaturaViewModel.swift in Sources */,

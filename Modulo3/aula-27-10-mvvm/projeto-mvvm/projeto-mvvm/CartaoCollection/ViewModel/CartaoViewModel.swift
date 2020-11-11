@@ -20,6 +20,10 @@ class CartaoViewModel {
         self.cartaoWorker.getListCartao { (response, error) in
             if error == nil {
                 self.arrayCartoes = response?.cartoes ?? [CartaoElement]()
+                
+                var addCartaoCell = CartaoElement(id: "", nome: "", data: "", numero: "", bandeira: "")
+                self.arrayCartoes.append(addCartaoCell)
+                
                 completion(true)
             } else {
                 print("deu erro")
