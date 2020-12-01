@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExtratoVC: UIViewController {
+class ExtratoVC: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     

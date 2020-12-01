@@ -78,7 +78,25 @@ extension CartoesVC: CartaoTableViewCellDelegate {
 //    }
     
     func tappedAddButton() {
-        print("Chegou na VIEWCONTROLLER")
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "AddCard", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AddCartaoVC") as! AddCartaoVC
+        vc.delegate = self
+        self.present(vc, animated: true, completion: nil)
+       }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+}
+
+extension CartoesVC: AddCartaoDelegate {
+    func addCartao(cartao: CartaoElement) {
+        
+        self.viewModel.addCartao(cartao: cartao)
+        
+        self.myTableView.reloadData()
+        
     }
     
     

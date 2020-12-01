@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,15 +18,17 @@
 		014029122548D9A300C05EC7 /* CartaoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014029112548D9A300C05EC7 /* CartaoController.swift */; };
 		014029192548DA8500C05EC7 /* Cartao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014029182548DA8500C05EC7 /* Cartao.swift */; };
 		0140291C2548DCE400C05EC7 /* CartaoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140291B2548DCE400C05EC7 /* CartaoWorker.swift */; };
-		014029202548E0B300C05EC7 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0140291F2548E0B300C05EC7 /* cartoes.json */; };
 		014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014029232548F20F00C05EC7 /* CartaoViewModel.swift */; };
+		0144BB2425707A2300182D43 /* loading3.json in Resources */ = {isa = PBXBuildFile; fileRef = 0144BB2325707A2300182D43 /* loading3.json */; };
 		014E53082552149100D26CD7 /* Lancamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E53072552149100D26CD7 /* Lancamento.swift */; };
 		014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E530D2552158C00D26CD7 /* ExtratoVC.swift */; };
 		014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E53112552165D00D26CD7 /* LancamentoTableViewCell.swift */; };
 		014E53142552165D00D26CD7 /* LancamentoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 014E53122552165D00D26CD7 /* LancamentoTableViewCell.xib */; };
 		014E5317255219C600D26CD7 /* ExtratoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E5316255219C600D26CD7 /* ExtratoViewModel.swift */; };
 		014E531B25521A8B00D26CD7 /* ExtratoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014E531A25521A8B00D26CD7 /* ExtratoWorker.swift */; };
-		014E531F25521C3700D26CD7 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 014E531E25521C3700D26CD7 /* despesas.json */; };
+		01559E752576FE220053026B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01559E732576FE220053026B /* LoadingView.swift */; };
+		01559E762576FE220053026B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01559E742576FE220053026B /* LoadingView.xib */; };
+		01559E7C257700100053026B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01559E7B257700100053026B /* BaseViewController.swift */; };
 		01AA2FB9254B82A100CB035C /* CartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */; };
 		01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */; };
 		01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */; };
@@ -35,7 +37,14 @@
 		01DDE8A52554BA6700F30621 /* FaturaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8A42554BA6700F30621 /* FaturaVC.swift */; };
 		01DDE8A82554BAE000F30621 /* FaturaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8A72554BAE000F30621 /* FaturaViewModel.swift */; };
 		01DDE8AB2554BB5000F30621 /* FaturaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DDE8AA2554BB5000F30621 /* FaturaWorker.swift */; };
-		01DDE8B22554C17C00F30621 /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 01DDE8B12554C17C00F30621 /* invoice.json */; };
+		01F2475B25648542006305B2 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F2475825648541006305B2 /* cartoes.json */; };
+		01F2475C25648542006305B2 /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F2475925648541006305B2 /* invoice.json */; };
+		01F2475D25648542006305B2 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 01F2475A25648541006305B2 /* despesas.json */; };
+		01F247662564860A006305B2 /* AddCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F247652564860A006305B2 /* AddCard.storyboard */; };
+		01F2476A25648B75006305B2 /* AddCartaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2476925648B75006305B2 /* AddCartaoViewModel.swift */; };
+		01F2476F25648BA8006305B2 /* AddCartaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2476E25648BA8006305B2 /* AddCartaoVC.swift */; };
+		01F24773256497F7006305B2 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F24772256497F7006305B2 /* Custom.swift */; };
+		AF42C8048362E2D9CFB10786 /* Pods_projeto_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35F9938A04466800CA11DF5 /* Pods_projeto_mvvm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,15 +61,17 @@
 		014029112548D9A300C05EC7 /* CartaoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoController.swift; sourceTree = "<group>"; };
 		014029182548DA8500C05EC7 /* Cartao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartao.swift; sourceTree = "<group>"; };
 		0140291B2548DCE400C05EC7 /* CartaoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoWorker.swift; sourceTree = "<group>"; };
-		0140291F2548E0B300C05EC7 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cartoes.json; path = ../../../../../../../Desktop/cartoes.json; sourceTree = "<group>"; };
 		014029232548F20F00C05EC7 /* CartaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoViewModel.swift; sourceTree = "<group>"; };
+		0144BB2325707A2300182D43 /* loading3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading3.json; sourceTree = "<group>"; };
 		014E53072552149100D26CD7 /* Lancamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lancamento.swift; sourceTree = "<group>"; };
 		014E530D2552158C00D26CD7 /* ExtratoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoVC.swift; sourceTree = "<group>"; };
 		014E53112552165D00D26CD7 /* LancamentoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancamentoTableViewCell.swift; sourceTree = "<group>"; };
 		014E53122552165D00D26CD7 /* LancamentoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LancamentoTableViewCell.xib; sourceTree = "<group>"; };
 		014E5316255219C600D26CD7 /* ExtratoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewModel.swift; sourceTree = "<group>"; };
 		014E531A25521A8B00D26CD7 /* ExtratoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoWorker.swift; sourceTree = "<group>"; };
-		014E531E25521C3700D26CD7 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = despesas.json; path = ../../../../../../../Desktop/despesas.json; sourceTree = "<group>"; };
+		01559E732576FE220053026B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		01559E742576FE220053026B /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		01559E7B257700100053026B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		01AA2FB7254B82A100CB035C /* CartaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoTableViewCell.swift; sourceTree = "<group>"; };
 		01AA2FB8254B82A100CB035C /* CartaoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartaoTableViewCell.xib; sourceTree = "<group>"; };
 		01AA2FBC254B82CE00CB035C /* CartaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,7 +80,16 @@
 		01DDE8A42554BA6700F30621 /* FaturaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaVC.swift; sourceTree = "<group>"; };
 		01DDE8A72554BAE000F30621 /* FaturaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaViewModel.swift; sourceTree = "<group>"; };
 		01DDE8AA2554BB5000F30621 /* FaturaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaturaWorker.swift; sourceTree = "<group>"; };
-		01DDE8B12554C17C00F30621 /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invoice.json; path = ../../../../../../../Desktop/invoice.json; sourceTree = "<group>"; };
+		01F2475825648541006305B2 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartoes.json; sourceTree = "<group>"; };
+		01F2475925648541006305B2 /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoice.json; sourceTree = "<group>"; };
+		01F2475A25648541006305B2 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+		01F247652564860A006305B2 /* AddCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCard.storyboard; sourceTree = "<group>"; };
+		01F2476925648B75006305B2 /* AddCartaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoViewModel.swift; sourceTree = "<group>"; };
+		01F2476E25648BA8006305B2 /* AddCartaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoVC.swift; sourceTree = "<group>"; };
+		01F24772256497F7006305B2 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		B4A7387068968018E9720D49 /* Pods-projeto-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projeto-mvvm.debug.xcconfig"; path = "Target Support Files/Pods-projeto-mvvm/Pods-projeto-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
+		D35F9938A04466800CA11DF5 /* Pods_projeto_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projeto_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BEB2EDF2CA1324271DCC6B /* Pods-projeto-mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projeto-mvvm.release.xcconfig"; path = "Target Support Files/Pods-projeto-mvvm/Pods-projeto-mvvm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF42C8048362E2D9CFB10786 /* Pods_projeto_mvvm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +109,8 @@
 			children = (
 				014028F62548D87B00C05EC7 /* projeto-mvvm */,
 				014028F52548D87B00C05EC7 /* Products */,
+				E6186AD746B3D20AE32FCC17 /* Pods */,
+				3ECB62211C416608B5F1D11C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,19 +125,21 @@
 		014028F62548D87B00C05EC7 /* projeto-mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				0144BB2325707A2300182D43 /* loading3.json */,
+				01F24771256497EB006305B2 /* Custom */,
+				01F2476825648B43006305B2 /* AddCartao */,
+				01F2475F25648557006305B2 /* Json */,
 				01DDE89C2554B8A000F30621 /* Fatura */,
 				014E53052552145700D26CD7 /* Extrato */,
 				014E5304255213D500D26CD7 /* CartaoCollection */,
 				0140290E2548D8A000C05EC7 /* Controller */,
 				014028F72548D87B00C05EC7 /* AppDelegate.swift */,
 				014028F92548D87B00C05EC7 /* SceneDelegate.swift */,
-				0140291F2548E0B300C05EC7 /* cartoes.json */,
-				014E531E25521C3700D26CD7 /* despesas.json */,
-				01DDE8B12554C17C00F30621 /* invoice.json */,
 				014028FD2548D87B00C05EC7 /* Main.storyboard */,
 				014029002548D87C00C05EC7 /* Assets.xcassets */,
 				014029022548D87C00C05EC7 /* LaunchScreen.storyboard */,
 				014029052548D87C00C05EC7 /* Info.plist */,
+				01F247652564860A006305B2 /* AddCard.storyboard */,
 			);
 			path = "projeto-mvvm";
 			sourceTree = "<group>";
@@ -225,6 +250,22 @@
 			path = Worker;
 			sourceTree = "<group>";
 		};
+		01559E81257704B40053026B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01F2476E25648BA8006305B2 /* AddCartaoVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01559E82257704BE0053026B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01F2476925648B75006305B2 /* AddCartaoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		01AA2FB5254B823D00CB035C /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +329,53 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		01F2475F25648557006305B2 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				01F2475825648541006305B2 /* cartoes.json */,
+				01F2475A25648541006305B2 /* despesas.json */,
+				01F2475925648541006305B2 /* invoice.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		01F2476825648B43006305B2 /* AddCartao */ = {
+			isa = PBXGroup;
+			children = (
+				01559E82257704BE0053026B /* ViewModel */,
+				01559E81257704B40053026B /* View */,
+			);
+			path = AddCartao;
+			sourceTree = "<group>";
+		};
+		01F24771256497EB006305B2 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				01F24772256497F7006305B2 /* Custom.swift */,
+				01559E732576FE220053026B /* LoadingView.swift */,
+				01559E742576FE220053026B /* LoadingView.xib */,
+				01559E7B257700100053026B /* BaseViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3ECB62211C416608B5F1D11C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35F9938A04466800CA11DF5 /* Pods_projeto_mvvm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6186AD746B3D20AE32FCC17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4A7387068968018E9720D49 /* Pods-projeto-mvvm.debug.xcconfig */,
+				E5BEB2EDF2CA1324271DCC6B /* Pods-projeto-mvvm.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 014029082548D87C00C05EC7 /* Build configuration list for PBXNativeTarget "projeto-mvvm" */;
 			buildPhases = (
+				4D96ED036DF2E68371BAFC2D /* [CP] Check Pods Manifest.lock */,
 				014028F02548D87B00C05EC7 /* Sources */,
 				014028F12548D87B00C05EC7 /* Frameworks */,
 				014028F22548D87B00C05EC7 /* Resources */,
+				A2C12AF436C532679DE5A54B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,29 +435,77 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F2475C25648542006305B2 /* invoice.json in Resources */,
 				010873D8255B49930089B7B0 /* AddCartaoCollectionViewCell.xib in Resources */,
-				01DDE8B22554C17C00F30621 /* invoice.json in Resources */,
+				0144BB2425707A2300182D43 /* loading3.json in Resources */,
 				014029042548D87C00C05EC7 /* LaunchScreen.storyboard in Resources */,
-				014029202548E0B300C05EC7 /* cartoes.json in Resources */,
 				014029012548D87C00C05EC7 /* Assets.xcassets in Resources */,
 				01AA2FBA254B82A100CB035C /* CartaoTableViewCell.xib in Resources */,
 				014E53142552165D00D26CD7 /* LancamentoTableViewCell.xib in Resources */,
-				014E531F25521C3700D26CD7 /* despesas.json in Resources */,
+				01F2475B25648542006305B2 /* cartoes.json in Resources */,
 				01AA2FBF254B82CE00CB035C /* CartaoCollectionViewCell.xib in Resources */,
 				014028FF2548D87B00C05EC7 /* Main.storyboard in Resources */,
+				01559E762576FE220053026B /* LoadingView.xib in Resources */,
+				01F2475D25648542006305B2 /* despesas.json in Resources */,
+				01F247662564860A006305B2 /* AddCard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D96ED036DF2E68371BAFC2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-projeto-mvvm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C12AF436C532679DE5A54B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projeto-mvvm/Pods-projeto-mvvm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projeto-mvvm/Pods-projeto-mvvm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-projeto-mvvm/Pods-projeto-mvvm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		014028F02548D87B00C05EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F2476A25648B75006305B2 /* AddCartaoViewModel.swift in Sources */,
 				01DDE8A22554B8F200F30621 /* Invoice.swift in Sources */,
+				01F24773256497F7006305B2 /* Custom.swift in Sources */,
 				01AA2FBE254B82CE00CB035C /* CartaoCollectionViewCell.swift in Sources */,
 				010873D7255B49930089B7B0 /* AddCartaoCollectionViewCell.swift in Sources */,
+				01559E7C257700100053026B /* BaseViewController.swift in Sources */,
 				014E53132552165D00D26CD7 /* LancamentoTableViewCell.swift in Sources */,
 				014E530E2552158C00D26CD7 /* ExtratoVC.swift in Sources */,
 				01DDE8A82554BAE000F30621 /* FaturaViewModel.swift in Sources */,
@@ -379,11 +517,13 @@
 				014E531B25521A8B00D26CD7 /* ExtratoWorker.swift in Sources */,
 				014028FC2548D87B00C05EC7 /* CartoesVC.swift in Sources */,
 				01DDE8AB2554BB5000F30621 /* FaturaWorker.swift in Sources */,
+				01F2476F25648BA8006305B2 /* AddCartaoVC.swift in Sources */,
 				014028F82548D87B00C05EC7 /* AppDelegate.swift in Sources */,
 				014029242548F20F00C05EC7 /* CartaoViewModel.swift in Sources */,
 				014028FA2548D87B00C05EC7 /* SceneDelegate.swift in Sources */,
 				014029122548D9A300C05EC7 /* CartaoController.swift in Sources */,
 				014029192548DA8500C05EC7 /* Cartao.swift in Sources */,
+				01559E752576FE220053026B /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +667,7 @@
 		};
 		014029092548D87C00C05EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A7387068968018E9720D49 /* Pods-projeto-mvvm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -545,6 +686,7 @@
 		};
 		0140290A2548D87C00C05EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5BEB2EDF2CA1324271DCC6B /* Pods-projeto-mvvm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FaturaVC: UIViewController {
+class FaturaVC: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,6 +24,8 @@ class FaturaVC: UIViewController {
                 self.tableView.separatorStyle = .none
             }
         }
+        
+        self.showLoading()
     }
     
     @IBAction func tappedBackButton(_ sender: UIButton) {

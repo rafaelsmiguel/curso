@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add CartaoVC-->
+        <scene sceneID="3dc-Ii-akT">
+            <objects>
+                <viewController storyboardIdentifier="AddCartaoVC" id="cyW-0p-tYd" customClass="AddCartaoVC" customModule="projeto_mvvm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W3K-xC-4Ab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-lj-9MR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-Yq-iWD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Jui-g9-RDH">
+                                                <rect key="frame" x="20" y="50" width="188" height="223"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8E-7d-XTp" userLabel="nameTextField" customClass="TextFieldRed" customModule="projeto_mvvm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número do Cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8r-rW-FE5" userLabel="numberCardTextField" customClass="TextFieldRed" customModule="projeto_mvvm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="64" width="188" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de Validade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXc-t1-Bfm" userLabel="dateTextField" customClass="TextFieldRed" customModule="projeto_mvvm" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="128" width="188" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K8k-qp-CCj" userLabel="segmentedBrand">
+                                                        <rect key="frame" x="0.0" y="192" width="188" height="32"/>
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <segments>
+                                                            <segment title="Visa"/>
+                                                            <segment title="Master"/>
+                                                            <segment title="Elo"/>
+                                                        </segments>
+                                                        <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-qe-Ool" userLabel="btnFoto">
+                                                <rect key="frame" x="20" y="323" width="188" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Foto">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapFoto:" destination="cyW-0p-tYd" eventType="touchUpInside" id="SJy-Gf-SBn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah0-x4-4qh" userLabel="btnSave">
+                                                <rect key="frame" x="20" y="373" width="188" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <state key="normal" title="Salvar">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapSave:" destination="cyW-0p-tYd" eventType="touchUpInside" id="ckJ-0u-Zpc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Adk-qe-Ool" firstAttribute="leading" secondItem="cfp-Yq-iWD" secondAttribute="leading" constant="20" id="1hv-g1-tWU"/>
+                                            <constraint firstItem="Jui-g9-RDH" firstAttribute="leading" secondItem="cfp-Yq-iWD" secondAttribute="leading" constant="20" id="CWt-r9-z9s"/>
+                                            <constraint firstAttribute="trailing" secondItem="Adk-qe-Ool" secondAttribute="trailing" constant="20" id="E4U-jz-O0r"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jui-g9-RDH" secondAttribute="trailing" constant="20" id="HfS-eg-uOf"/>
+                                            <constraint firstItem="Ah0-x4-4qh" firstAttribute="top" secondItem="Adk-qe-Ool" secondAttribute="bottom" constant="20" id="JFc-tR-duE"/>
+                                            <constraint firstItem="Jui-g9-RDH" firstAttribute="top" secondItem="cfp-Yq-iWD" secondAttribute="top" constant="50" id="JZB-h2-KKC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ah0-x4-4qh" secondAttribute="bottom" constant="30" id="LF8-1w-9vu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ah0-x4-4qh" secondAttribute="trailing" constant="20" id="ab5-Kx-WzX"/>
+                                            <constraint firstItem="Adk-qe-Ool" firstAttribute="top" secondItem="Jui-g9-RDH" secondAttribute="bottom" constant="50" id="kbh-5a-UvT"/>
+                                            <constraint firstItem="Ah0-x4-4qh" firstAttribute="leading" secondItem="cfp-Yq-iWD" secondAttribute="leading" constant="20" id="nGZ-3e-EZL"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cfp-Yq-iWD" firstAttribute="width" secondItem="7BT-lj-9MR" secondAttribute="width" id="5dk-mR-A05"/>
+                                    <constraint firstItem="cfp-Yq-iWD" firstAttribute="leading" secondItem="7BT-lj-9MR" secondAttribute="leading" id="613-0E-3MY"/>
+                                    <constraint firstItem="cfp-Yq-iWD" firstAttribute="top" secondItem="7BT-lj-9MR" secondAttribute="top" id="IWq-qZ-zJd"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfp-Yq-iWD" secondAttribute="trailing" id="Q1g-Kd-P3c"/>
+                                    <constraint firstAttribute="bottom" secondItem="cfp-Yq-iWD" secondAttribute="bottom" id="pah-IG-Bhj"/>
+                                    <constraint firstItem="cfp-Yq-iWD" firstAttribute="height" secondItem="7BT-lj-9MR" secondAttribute="height" priority="400" id="vAp-DW-J1D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pPU-1v-Zhp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7BT-lj-9MR" firstAttribute="top" secondItem="pPU-1v-Zhp" secondAttribute="top" id="SB8-qN-sHp"/>
+                            <constraint firstItem="7BT-lj-9MR" firstAttribute="leading" secondItem="pPU-1v-Zhp" secondAttribute="leading" id="aes-HV-0G6"/>
+                            <constraint firstItem="pPU-1v-Zhp" firstAttribute="bottom" secondItem="7BT-lj-9MR" secondAttribute="bottom" id="boy-AT-GMl"/>
+                            <constraint firstItem="pPU-1v-Zhp" firstAttribute="trailing" secondItem="7BT-lj-9MR" secondAttribute="trailing" id="hz5-SA-7nv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="ZXc-t1-Bfm" id="HKV-8H-bQ6"/>
+                        <outlet property="nameTextField" destination="Q8E-7d-XTp" id="k90-55-KZs"/>
+                        <outlet property="numberCardTextField" destination="G8r-rW-FE5" id="Ijh-le-6ea"/>
+                        <outlet property="segmentedBrand" destination="K8k-qp-CCj" id="bwg-xU-ch8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yby-9c-rkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.72463768115944" y="174.77678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -48,4 +48,10 @@ class CartaoViewModel {
         self.currentCartao = self.arrayCartoes[index]
     }
     
+    func addCartao(cartao: CartaoElement) {
+        self.arrayCartoes.removeLast()
+        self.arrayCartoes.append(cartao)
+        self.arrayCartoes.append(CartaoElement(id: "", nome: "", data: "", numero: "", bandeira: ""))
+    }
+    
 }
